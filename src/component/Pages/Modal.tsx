@@ -4,6 +4,7 @@ import { FavoritesContext } from "../../context/FavoritesContext";
 
 export const Modal = (props: { showModal: boolean }) => {
   const { setShowModal, removeFavorite } = useContext(FavoritesContext);
+  // Il faut vraiment penser à enlever les console log
   console.log(props);
   if (!props.showModal) return null;
   return (

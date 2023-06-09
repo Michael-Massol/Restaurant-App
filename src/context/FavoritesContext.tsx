@@ -5,6 +5,8 @@ type FavoritesContextType = {
   favoritesIds: number[];
   addFavorite: (id: number) => void;
   removeFavorite: () => void;
+  // Je ne crois pas que tu aies besoin de rendre showModal disponible
+  // comme tu le passes en prop à la modale ici
   showModal: boolean;
   setShowModal: (show: boolean) => void;
   setSelectedFavId: (favId: number) => void;
