@@ -1,0 +1,39 @@
+.restaurant-content{
+    width: 20vw;
+    height: auto;
+    margin: 1rem;
+    border-radius: 0 30px 30px 0;
+    background-color: coral;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurant-content img:first-child{
+    width: 20vw;    
+    height: 15vw;
+    border-radius: 0 30px 0 0;
+}
+
+.restaurant-content img:last-child{
+    width: 50px;
+    height: 50px;
+}
+
+.restaurant-content img:hover {
+    filter: brightness(120%);
+}
+
+.restaurant-content a{
+    color:white;
+}
+
+.restaurant-content #btn-and-img-container{
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-content #add-to-favorites{
+    cursor: pointer;
+}

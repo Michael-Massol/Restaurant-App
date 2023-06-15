@@ -1,0 +1,32 @@
+header{
+    height: 8rem;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 2rem;
+    padding:0 1rem;
+    border-bottom: 5px dotted white;
+}
+
+header #go-to-fav{
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+header h1{
+    color: white;
+}
+
+header button{
+    cursor: pointer;
+}
+
+header h1:hover{
+    color: coral;
+}
