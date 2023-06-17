@@ -9,6 +9,8 @@ const DetailsPage = () => {
   const { restaurantId } = useParams();
   const [restaurant, setRestaurant] = useState<RestaurantType | null>(null);
   const { restaurants } = useContext(RestaurantContext);
+  
+  // Si tu n'as pas besoin de removeFavorite ne l'importe pas
   const {
     favoritesIds,
     removeFavorite,
@@ -35,6 +37,8 @@ const DetailsPage = () => {
     }
   };
 
+  // Le useEffect ne peut pas être appelé après une condition, 
+  // ça fait planter ton app. As-tu testé ?
   useEffect(() => {
     getRestaurant();
   }, []);
